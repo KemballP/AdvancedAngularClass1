@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CourseTypeComponent } from './components/course-type/course-type.component';
 
-const routes: Routes = [];
+export const routes: Routes = [  { path: 'coursetypes', component: CourseTypeComponent },
+{ path: '', redirectTo: '/coursetypes', pathMatch: 'full' }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
